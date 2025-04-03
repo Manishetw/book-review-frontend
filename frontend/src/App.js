@@ -11,6 +11,10 @@ import UpdateProfile from "./pages/auth/Updateprofile";
 import Logout from "./pages/auth/Logout";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);

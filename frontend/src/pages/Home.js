@@ -81,8 +81,52 @@ const Home = () => {
                 </div>
             </Carousel.Item>
         </Carousel>
-        
-     </div>
+        <div style={{ marginTop: '20px', padding: '0 20px' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <h2>Featured Books</h2>
+                    <a href='#' style={{ textDecoration: 'none', color: '#007bff' }}>View All</a>
+                </div>
+                <div style={{ display: 'flex', overflowX: 'auto', gap: '20px', padding: '10px 0' }}>
+                    {[book1, book2, book3, book4, book5, book6, book7, book8].map((book, index) => (
+                        <div key={index} style={{ minWidth: '150px', textAlign: 'center' }}>
+                            <img src={book} alt={`Book ${index + 1}`} style={{ width: '100%', height: '200px', borderRadius: '8px' }} />
+                            <p style={{ margin: '5px 0' }}>Book Title {index + 1}</p>
+                            <p style={{ margin: '0', color: 'red' }}>₹{Math.floor(Math.random() * 1000) + 100}</p>
+                        </div>
+                    ))}
+                </div>
+           </div>
+           <div style={{ marginTop: '20px', padding: '0 20px' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <h2>Recommended Books</h2>
+                    <a href='#' style={{ textDecoration: 'none', color: '#007bff' }}>View All</a>
+                </div>
+                <div style={{ display: 'flex', overflowX: 'auto', gap: '20px', padding: '10px 0' }}>
+                    {[book1, book2, book3, book4, book5, book6, book7, book8].map((book, index) => (
+                        <div key={index} style={{ minWidth: '150px', textAlign: 'center' }}>
+                            <img src={book} alt={`Book ${index + 1}`} style={{ width: '100%', height: '200px', borderRadius: '8px' }} />
+                            <p style={{ margin: '5px 0' }}>Book Title {index + 1}</p>
+                            <p style={{ margin: '0', color: 'red' }}>₹{Math.floor(Math.random() * 1000) + 100}</p>
+                        </div>
+                    ))}
+                </div>
+           </div>
+           <div style={{ marginTop: '20px', padding: '0 20px' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                    <h2>Popular Choices</h2>
+                    <a href='#' style={{ textDecoration: 'none', color: '#007bff' }}>View All</a>
+                </div>
+                <div style={{ display: 'flex', overflowX: 'auto', gap: '20px', padding: '10px 0' }}>
+                    {[book1, book2, book3, book4, book5, book6, book7, book8].map((book, index) => (
+                    <div key={index} style={{ minWidth: '150px', textAlign: 'center' }}>
+                            <img src={book} alt={`Book ${index + 1}`} style={{ width: '100%', height: '200px', borderRadius: '8px' }} />
+                            <p style={{ margin: '5px 0' }}>Book Title {index + 1}</p>
+                            <p style={{ margin: '0', color: 'red' }}>₹{Math.floor(Math.random() * 1000) + 100}</p>
+                    </div>
+                    ))}
+                </div>
+           </div>
+        </div>
     );
 };
 
