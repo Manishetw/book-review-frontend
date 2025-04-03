@@ -75,6 +75,62 @@ const Home = () => {
                             <p>Price: $15.99</p>
                         </div>
                     </Link>
+                    <Link to="/bookDetails" state={{ title: "Book 5", price: "$12.99", image: book5 }}>
+                        <div style={{ width: '200px' }}>
+                            <img src={book5} alt='Book 5' style={{ width: '100%' }} />
+                            <h5>Book Title 3</h5>
+                            <p>Price: $12.99</p>
+                        </div>
+                    </Link>
+                    <Link to="/bookDetails" state={{ title: "Book 6", price: "$12.99", image: book6 }}>
+                        <div style={{ width: '200px' }}>
+                            <img src={book6} alt='Book 6' style={{ width: '100%' }} />
+                            <h5>Book Title 4</h5>
+                            <p>Price: $12.99</p>
+                        </div>
+                    </Link>
+                    <Link to="/bookDetails" state={{ title: "Book 7", price: "$12.99", image: book7 }}>
+                        <div style={{ width: '200px' }}>
+                            <img src={book7} alt='Book 7' style={{ width: '100%' }} />
+                            <h5>Book Title 5</h5>
+                            <p>Price: $12.99</p>
+                        </div>
+                    </Link>
+                    <Link to="/bookDetails" state={{ title: "Book 8", price: "$12.99", image: book8 }}>
+                        <div style={{ width: '200px' }}>
+                            <img src={book8} alt='Book 8' style={{ width: '100%' }} />
+                            <h5>Book Title 6</h5>
+                            <p>Price: $12.99</p>
+                        </div>
+                    </Link>
+                    <Link to="/bookDetails" state={{ title: "Book 9", price: "$12.99", image: book9 }}>
+                        <div style={{ width: '200px' }}>
+                            <img src={book9} alt='Book 9' style={{ width: '100%' }} />
+                            <h5>Book Title 9</h5>
+                            <p>Price: $12.99</p>
+                        </div>
+                    </Link>
+                     <Link to="/bookDetails" state={{ title: "Book 10", price: "$12.99", image: book10 }}>
+                        <div style={{ width: '200px' }}>
+                            <img src={book10} alt='Book 9' style={{ width: '100%' }} />
+                            <h5>Book Title 10</h5>
+                            <p>Price: $12.99</p>
+                        </div>
+                    </Link>
+                    <Link to="/bookDetails" state={{ title: "Book 11", price: "$12.99", image: book11 }}>
+                        <div style={{ width: '200px' }}>
+                            <img src={book11} alt='Book 11' style={{ width: '100%' }} />
+                            <h5>Book Title 11</h5>
+                            <p>Price: $12.99</p>
+                        </div>
+                    </Link>
+                    <Link to="/bookDetails" state={{ title: "Book 12", price: "$12.99", image: book12 }}>
+                        <div style={{ width: '200px' }}>
+                            <img src={book12} alt='Book 12' style={{ width: '100%' }} />
+                            <h5>Book Title 12</h5>
+                            <p>Price: $12.99</p>
+                        </div>
+                    </Link>
                     {/* More books can be added similarly */}
                 </div>
             </div>
