@@ -7,6 +7,7 @@ import SignIn from "./pages/auth/Signin";
 import SignUp from "./pages/auth/Signup";
 import ForgotPassword from "./pages/auth/Forgotpassword";
 import ResetPassword from "./pages/auth/Resetpassword";
+import Profile from "./pages/auth/Profile";
 import UpdateProfile from "./pages/auth/Updateprofile";
 import Logout from "./pages/auth/Logout";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -15,16 +16,18 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 
+
+
 function App() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
-      <div style={{ backgroundColor: "white" }}>
+      <div style={{ backgroundColor: "#d6f8f0", height: "100vh" }}>
         {/* Navbar Section */}
         <nav
           className="navbar navbar-expand-lg navbar-light"
-          style={{ backgroundColor: "#095847", padding: "10px" }}
+          style={{ backgroundColor: "#095847", padding: "10px", position:'sticky', display:'flex', top:0, zIndex:999 }}
         >
           
           <button
@@ -94,7 +97,7 @@ function App() {
                     <li>
                       <Link
                         className="dropdown-item"
-                        to="/forgotpassword"
+                        to="/forget"
                         onClick={() => setIsOpen(false)}
                       >
                         Forgot Password
@@ -121,7 +124,7 @@ function App() {
                     <li>
                       <Link
                         className="dropdown-item"
-                        to="/profiel"
+                        to="/profile"
                         onClick={() => setIsOpen(false)}
                       >
                         Profile
@@ -142,10 +145,11 @@ function App() {
           {/* Authentication Routes */}
           <Route path="/signin" element={<SignIn />} />
           <Route path="/signup" element={<SignUp />} />
-          <Route path="/forgot" element={<ForgotPassword />} />
+          <Route path="/forget" element={<ForgotPassword />} />
           <Route path="/reset-password" element={<ResetPassword />} />
           <Route path="/update-profile" element={<UpdateProfile />} />
           <Route path="/logout" element={<Logout />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </div>
     </>
